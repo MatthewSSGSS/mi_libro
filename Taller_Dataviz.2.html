@@ -1,0 +1,1750 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Librerias &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Taller_Dataviz.2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTaller_Dataviz.2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Taller_Dataviz.2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Librerias</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerias</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-dataset">Cargar Dataset</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exploracion-de-variables">Exploracion de Variables</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-de-variables">Identificacion de Variables</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-faltantes">Detección de valores faltantes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-de-barras">Grafico de barras</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-de-calor-de-valores-faltantes">Mapa de calor de valores faltantes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-de-tipo-de-ausencia">Clasificación de tipo de ausencia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#discusion-sobre-imputabilidad">Discusión sobre imputabilidad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imputaciones-numericas">Imputaciones numéricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imputaciones-categoricas">Imputaciones categóricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-series">Imputacion de series</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-comparativos-numericas">Gráficos comparativos numéricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-categoricas">Gráficos categóricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-series-temporales">Gráficos series temporales</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-estadistica">Evaluación estadística</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-final">Resumen Final</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="librerias">
+<h1>Librerias<a class="headerlink" href="#librerias" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.experimental</span><span class="w"> </span><span class="kn">import</span> <span class="n">enable_iterative_imputer</span> 
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.impute</span><span class="w"> </span><span class="kn">import</span> <span class="n">KNNImputer</span><span class="p">,</span> <span class="n">IterativeImputer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">BayesianRidge</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">mean_squared_error</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">shapiro</span><span class="p">,</span> <span class="n">ks_2samp</span><span class="p">,</span> <span class="n">ttest_ind</span><span class="p">,</span> <span class="n">mannwhitneyu</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">mateo</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_lihki</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">80</span>
+<span class="g g-Whitespace">     </span><span class="mi">77</span> <span class="c1"># let init-time option registration happen</span>
+<span class="g g-Whitespace">     </span><span class="mi">78</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas.core.config_init</span>  <span class="c1"># pyright: ignore[reportUnusedImport] # noqa: F401</span>
+<span class="ne">---&gt; </span><span class="mi">80</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.api</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">81</span>     <span class="c1"># dtype</span>
+<span class="g g-Whitespace">     </span><span class="mi">82</span>     <span class="n">ArrowDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">83</span>     <span class="n">Int8Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">84</span>     <span class="n">Int16Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">85</span>     <span class="n">Int32Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">86</span>     <span class="n">Int64Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">87</span>     <span class="n">UInt8Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span>     <span class="n">UInt16Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span>     <span class="n">UInt32Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span>     <span class="n">UInt64Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span>     <span class="n">Float32Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">92</span>     <span class="n">Float64Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">93</span>     <span class="n">CategoricalDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">PeriodDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">IntervalDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="n">DatetimeTZDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>     <span class="n">StringDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="n">BooleanDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">99</span>     <span class="c1"># missing</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span>     <span class="n">NA</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span>     <span class="n">isna</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span>     <span class="n">isnull</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">103</span>     <span class="n">notna</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>     <span class="n">notnull</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>     <span class="c1"># indexes</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span>     <span class="n">Index</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">107</span>     <span class="n">CategoricalIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">108</span>     <span class="n">RangeIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span>     <span class="n">MultiIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span>     <span class="n">IntervalIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span>     <span class="n">TimedeltaIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="n">DatetimeIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span>     <span class="n">PeriodIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span>     <span class="n">IndexSlice</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="c1"># tseries</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="n">NaT</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span>     <span class="n">Period</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span>     <span class="n">period_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="n">Timedelta</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">120</span>     <span class="n">timedelta_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span>     <span class="n">Timestamp</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span>     <span class="n">date_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="n">bdate_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">Interval</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">125</span>     <span class="n">interval_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">126</span>     <span class="n">DateOffset</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">127</span>     <span class="c1"># conversion</span>
+<span class="g g-Whitespace">    </span><span class="mi">128</span>     <span class="n">to_numeric</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span>     <span class="n">to_datetime</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="n">to_timedelta</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>     <span class="c1"># misc</span>
+<span class="g g-Whitespace">    </span><span class="mi">132</span>     <span class="n">Flags</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>     <span class="n">Grouper</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="n">factorize</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span>     <span class="n">unique</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>     <span class="n">value_counts</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>     <span class="n">NamedAgg</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span>     <span class="n">array</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span>     <span class="n">Categorical</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>     <span class="n">set_eng_float_format</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">141</span>     <span class="n">Series</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span>     <span class="n">DataFrame</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">143</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">145</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.dtypes.dtypes</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparseDtype</span>
+<span class="g g-Whitespace">    </span><span class="mi">147</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.tseries.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">infer_freq</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">mateo</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_lihki</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="n">core</span>\<span class="n">api</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">47</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.construction</span><span class="w"> </span><span class="kn">import</span> <span class="n">array</span>
+<span class="g g-Whitespace">     </span><span class="mi">46</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.flags</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flags</span>
+<span class="ne">---&gt; </span><span class="mi">47</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.groupby</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>     <span class="n">Grouper</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span>     <span class="n">NamedAgg</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">51</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.indexes.api</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="n">CategoricalIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span>     <span class="n">DatetimeIndex</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">59</span>     <span class="n">TimedeltaIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.indexes.datetimes</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span>     <span class="n">bdate_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span>     <span class="n">date_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span> <span class="p">)</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">mateo</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_lihki</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="n">core</span>\<span class="n">groupby</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.groupby.generic</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="n">DataFrameGroupBy</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">NamedAgg</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">SeriesGroupBy</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.groupby.groupby</span><span class="w"> </span><span class="kn">import</span> <span class="n">GroupBy</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.groupby.grouper</span><span class="w"> </span><span class="kn">import</span> <span class="n">Grouper</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">mateo</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_lihki</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="n">core</span>\<span class="n">groupby</span>\<span class="n">generic</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">60</span>
+<span class="g g-Whitespace">     </span><span class="mi">54</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.dtypes.missing</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">55</span>     <span class="n">isna</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">56</span>     <span class="n">notna</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">57</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">59</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">algorithms</span>
+<span class="ne">---&gt; </span><span class="mi">60</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.apply</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span>     <span class="n">GroupByApply</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span>     <span class="n">maybe_mangle_lambdas</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span>     <span class="n">reconstruct_func</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span>     <span class="n">validate_func_kwargs</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span>     <span class="n">warn_alias_replacement</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">66</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">67</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas.core.common</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">com</span>
+<span class="g g-Whitespace">     </span><span class="mi">68</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.core.frame</span><span class="w"> </span><span class="kn">import</span> <span class="n">DataFrame</span>
+
+<span class="n">File</span> <span class="n">c</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">mateo</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_lihki</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="n">core</span>\<span class="n">apply</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">22</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas._config</span><span class="w"> </span><span class="kn">import</span> <span class="n">option_context</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas._libs</span><span class="w"> </span><span class="kn">import</span> <span class="n">lib</span>
+<span class="ne">---&gt; </span><span class="mi">22</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas._libs.internals</span><span class="w"> </span><span class="kn">import</span> <span class="n">BlockValuesRefs</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas._typing</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>     <span class="n">AggFuncType</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>     <span class="n">AggFuncTypeBase</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>     <span class="n">npt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pandas.compat._optional</span><span class="w"> </span><span class="kn">import</span> <span class="n">import_optional_dependency</span>
+
+<span class="nn">File &lt;frozen importlib._bootstrap&gt;:398,</span> in <span class="ni">parent</span><span class="nt">(self)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="cargar-dataset">
+<h1>Cargar Dataset<a class="headerlink" href="#cargar-dataset" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/Kalbam/Datos/main/base_imputacion_mixta_1000.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fecha</th>
+      <th>sexo</th>
+      <th>ciudad</th>
+      <th>nivel_educativo</th>
+      <th>segmento</th>
+      <th>estado_civil</th>
+      <th>edad</th>
+      <th>altura_cm</th>
+      <th>ingresos</th>
+      <th>gasto_mensual</th>
+      <th>puntuacion_credito</th>
+      <th>demanda</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2024-01-01</td>
+      <td>F</td>
+      <td>Medellín</td>
+      <td>NaN</td>
+      <td>B</td>
+      <td>Unión libre</td>
+      <td>19.0</td>
+      <td>161.821754</td>
+      <td>3574.753806</td>
+      <td>1832.731832</td>
+      <td>640.465372</td>
+      <td>119.202995</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2024-01-02</td>
+      <td>F</td>
+      <td>Barranquilla</td>
+      <td>NaN</td>
+      <td>B</td>
+      <td>NaN</td>
+      <td>52.0</td>
+      <td>167.819566</td>
+      <td>3163.626815</td>
+      <td>NaN</td>
+      <td>533.108430</td>
+      <td>124.457874</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2024-01-03</td>
+      <td>M</td>
+      <td>Bogotá</td>
+      <td>Secundaria</td>
+      <td>B</td>
+      <td>Soltero/a</td>
+      <td>38.0</td>
+      <td>165.756219</td>
+      <td>2765.672259</td>
+      <td>1219.535074</td>
+      <td>491.016910</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2024-01-04</td>
+      <td>F</td>
+      <td>Bogotá</td>
+      <td>NaN</td>
+      <td>B</td>
+      <td>Casado/a</td>
+      <td>57.0</td>
+      <td>160.642670</td>
+      <td>4320.397345</td>
+      <td>1908.324816</td>
+      <td>NaN</td>
+      <td>129.426792</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2024-01-05</td>
+      <td>M</td>
+      <td>Cali</td>
+      <td>Técnico</td>
+      <td>B</td>
+      <td>Soltero/a</td>
+      <td>67.0</td>
+      <td>151.402909</td>
+      <td>NaN</td>
+      <td>1887.385697</td>
+      <td>610.213994</td>
+      <td>133.916319</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="exploracion-de-variables">
+<h1>Exploracion de Variables<a class="headerlink" href="#exploracion-de-variables" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 12 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   fecha               1000 non-null   object 
+ 1   sexo                980 non-null    object 
+ 2   ciudad              950 non-null    object 
+ 3   nivel_educativo     900 non-null    object 
+ 4   segmento            800 non-null    object 
+ 5   estado_civil        650 non-null    object 
+ 6   edad                970 non-null    float64
+ 7   altura_cm           920 non-null    float64
+ 8   ingresos            880 non-null    float64
+ 9   gasto_mensual       750 non-null    float64
+ 10  puntuacion_credito  500 non-null    float64
+ 11  demanda             850 non-null    float64
+dtypes: float64(6), object(6)
+memory usage: 93.9+ KB
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fecha</th>
+      <th>sexo</th>
+      <th>ciudad</th>
+      <th>nivel_educativo</th>
+      <th>segmento</th>
+      <th>estado_civil</th>
+      <th>edad</th>
+      <th>altura_cm</th>
+      <th>ingresos</th>
+      <th>gasto_mensual</th>
+      <th>puntuacion_credito</th>
+      <th>demanda</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1000</td>
+      <td>980</td>
+      <td>950</td>
+      <td>900</td>
+      <td>800</td>
+      <td>650</td>
+      <td>970.000000</td>
+      <td>920.000000</td>
+      <td>880.000000</td>
+      <td>750.000000</td>
+      <td>500.000000</td>
+      <td>850.000000</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>1000</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>2026-09-26</td>
+      <td>F</td>
+      <td>Bogotá</td>
+      <td>Secundaria</td>
+      <td>B</td>
+      <td>Soltero/a</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>1</td>
+      <td>518</td>
+      <td>307</td>
+      <td>317</td>
+      <td>457</td>
+      <td>290</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>42.861856</td>
+      <td>167.760096</td>
+      <td>3681.294745</td>
+      <td>1687.810749</td>
+      <td>599.077500</td>
+      <td>160.305759</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>14.621382</td>
+      <td>9.275530</td>
+      <td>1079.326096</td>
+      <td>582.070174</td>
+      <td>79.828186</td>
+      <td>25.357794</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>18.000000</td>
+      <td>140.000000</td>
+      <td>487.662547</td>
+      <td>100.000000</td>
+      <td>373.657944</td>
+      <td>99.875828</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>30.000000</td>
+      <td>161.488768</td>
+      <td>2999.416229</td>
+      <td>1309.239768</td>
+      <td>544.467843</td>
+      <td>139.505538</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>43.000000</td>
+      <td>167.714614</td>
+      <td>3669.620507</td>
+      <td>1676.193764</td>
+      <td>599.692595</td>
+      <td>160.721251</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>55.000000</td>
+      <td>173.999069</td>
+      <td>4375.093656</td>
+      <td>2063.260990</td>
+      <td>653.345068</td>
+      <td>181.100754</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>69.000000</td>
+      <td>195.766921</td>
+      <td>7016.246936</td>
+      <td>3532.593603</td>
+      <td>823.539585</td>
+      <td>222.093047</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="identificacion-de-variables">
+<h1>Identificacion de Variables<a class="headerlink" href="#identificacion-de-variables" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cualitativas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;object&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">cuantitativas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cualitativas:&quot;</span><span class="p">,</span> <span class="n">cualitativas</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cuantitativas:&quot;</span><span class="p">,</span> <span class="n">cuantitativas</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cualitativas: [&#39;fecha&#39;, &#39;sexo&#39;, &#39;ciudad&#39;, &#39;nivel_educativo&#39;, &#39;segmento&#39;, &#39;estado_civil&#39;]
+Cuantitativas: [&#39;edad&#39;, &#39;altura_cm&#39;, &#39;ingresos&#39;, &#39;gasto_mensual&#39;, &#39;puntuacion_credito&#39;, &#39;demanda&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="deteccion-de-valores-faltantes">
+<h1>Detección de valores faltantes<a class="headerlink" href="#deteccion-de-valores-faltantes" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">faltantes</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">faltantes_pct</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">tabla_faltantes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;faltantes&quot;</span><span class="p">:</span> <span class="n">faltantes</span><span class="p">,</span>
+    <span class="s2">&quot;%&quot;</span><span class="p">:</span> <span class="n">faltantes_pct</span>
+<span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tabla_faltantes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                    faltantes     %
+fecha                       0   0.0
+sexo                       20   2.0
+ciudad                     50   5.0
+nivel_educativo           100  10.0
+segmento                  200  20.0
+estado_civil              350  35.0
+edad                       30   3.0
+altura_cm                  80   8.0
+ingresos                  120  12.0
+gasto_mensual             250  25.0
+puntuacion_credito        500  50.0
+demanda                   150  15.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="grafico-de-barras">
+<h1>Grafico de barras<a class="headerlink" href="#grafico-de-barras" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">faltantes_pct</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Porcentaje de valores faltantes por variable&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">% f</span><span class="s2">altantes&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f3f360e31219506c12be491689cd059a15a346562d889472a80ecb17c0e3f394.png" src="_images/f3f360e31219506c12be491689cd059a15a346562d889472a80ecb17c0e3f394.png" />
+</div>
+</div>
+</section>
+<section id="mapa-de-calor-de-valores-faltantes">
+<h1>Mapa de calor de valores faltantes<a class="headerlink" href="#mapa-de-calor-de-valores-faltantes" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Mapa de calor de valores faltantes&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b6cfaf54c0588101ea1c2a774a170f6f7702eae813a714320efd27937267fb99.png" src="_images/b6cfaf54c0588101ea1c2a774a170f6f7702eae813a714320efd27937267fb99.png" />
+</div>
+</div>
+</section>
+<section id="clasificacion-de-tipo-de-ausencia">
+<h1>Clasificación de tipo de ausencia<a class="headerlink" href="#clasificacion-de-tipo-de-ausencia" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tipo_ausencia</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">faltantes</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;No aplica&quot;</span>
+    <span class="k">elif</span> <span class="n">faltantes_pct</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;MCAR&quot;</span>
+    <span class="k">elif</span> <span class="mi">5</span> <span class="o">&lt;=</span> <span class="n">faltantes_pct</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+        <span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;MAR&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;MNAR&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">tipo_ausencia</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;fecha&#39;: &#39;No aplica&#39;, &#39;sexo&#39;: &#39;MCAR&#39;, &#39;ciudad&#39;: &#39;MAR&#39;, &#39;nivel_educativo&#39;: &#39;MAR&#39;, &#39;segmento&#39;: &#39;MNAR&#39;, &#39;estado_civil&#39;: &#39;MNAR&#39;, &#39;edad&#39;: &#39;MCAR&#39;, &#39;altura_cm&#39;: &#39;MAR&#39;, &#39;ingresos&#39;: &#39;MAR&#39;, &#39;gasto_mensual&#39;: &#39;MNAR&#39;, &#39;puntuacion_credito&#39;: &#39;MNAR&#39;, &#39;demanda&#39;: &#39;MAR&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="discusion-sobre-imputabilidad">
+<h1>Discusión sobre imputabilidad<a class="headerlink" href="#discusion-sobre-imputabilidad" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">discusion</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;variable&quot;</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
+    <span class="s2">&quot;%_faltantes&quot;</span><span class="p">:</span> <span class="n">faltantes_pct</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+    <span class="s2">&quot;tipo_ausencia&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">],</span>
+    <span class="s2">&quot;riesgo_imputacion&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;medio&quot;</span> <span class="k">if</span> <span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;MAR&quot;</span> <span class="k">else</span> <span class="s2">&quot;alto&quot;</span> <span class="k">if</span> <span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;MNAR&quot;</span> <span class="k">else</span> <span class="s2">&quot;bajo&quot;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">],</span>
+    <span class="s2">&quot;metodo_sugerido&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;media/mediana&quot;</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cuantitativas</span> <span class="k">else</span> <span class="s2">&quot;moda&quot;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="n">discusion</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>variable</th>
+      <th>%_faltantes</th>
+      <th>tipo_ausencia</th>
+      <th>riesgo_imputacion</th>
+      <th>metodo_sugerido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>fecha</td>
+      <td>0.0</td>
+      <td>No aplica</td>
+      <td>bajo</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>sexo</td>
+      <td>2.0</td>
+      <td>MCAR</td>
+      <td>bajo</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ciudad</td>
+      <td>5.0</td>
+      <td>MAR</td>
+      <td>medio</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>nivel_educativo</td>
+      <td>10.0</td>
+      <td>MAR</td>
+      <td>medio</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>segmento</td>
+      <td>20.0</td>
+      <td>MNAR</td>
+      <td>alto</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>estado_civil</td>
+      <td>35.0</td>
+      <td>MNAR</td>
+      <td>alto</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>edad</td>
+      <td>3.0</td>
+      <td>MCAR</td>
+      <td>bajo</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>altura_cm</td>
+      <td>8.0</td>
+      <td>MAR</td>
+      <td>medio</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>ingresos</td>
+      <td>12.0</td>
+      <td>MAR</td>
+      <td>medio</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>gasto_mensual</td>
+      <td>25.0</td>
+      <td>MNAR</td>
+      <td>alto</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>puntuacion_credito</td>
+      <td>50.0</td>
+      <td>MNAR</td>
+      <td>alto</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>demanda</td>
+      <td>15.0</td>
+      <td>MAR</td>
+      <td>medio</td>
+      <td>media/mediana</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="imputaciones-numericas">
+<h1>Imputaciones numéricas<a class="headerlink" href="#imputaciones-numericas" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_cols</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">cuantitativas</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Media</span>
+<span class="n">df_num_mean</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_num_mean</span><span class="p">[</span><span class="n">num_cols</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_cols</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">num_cols</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+
+<span class="c1"># Mediana</span>
+<span class="n">df_num_median</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_num_median</span><span class="p">[</span><span class="n">num_cols</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_cols</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">num_cols</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+
+<span class="c1"># KNN</span>
+<span class="n">knn_imp</span> <span class="o">=</span> <span class="n">KNNImputer</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">df_num_knn</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_num_knn</span><span class="p">[</span><span class="n">num_cols</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">knn_imp</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">num_cols</span><span class="p">)</span>
+
+<span class="c1"># Iterative Imputer con BayesianRidge</span>
+<span class="n">iter_imp</span> <span class="o">=</span> <span class="n">IterativeImputer</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">BayesianRidge</span><span class="p">(),</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_num_iter</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_num_iter</span><span class="p">[</span><span class="n">num_cols</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">iter_imp</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">num_cols</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\mateo\miniconda3\envs\ml_lihki\lib\site-packages\sklearn\impute\_iterative.py:895: ConvergenceWarning: [IterativeImputer] Early stopping criterion not reached.
+  warnings.warn(
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="imputaciones-categoricas">
+<h1>Imputaciones categóricas<a class="headerlink" href="#imputaciones-categoricas" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cat_cols</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">cualitativas</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Moda</span>
+<span class="n">df_categ_mode</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cualitativas</span><span class="p">:</span>
+    <span class="n">moda</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">df_categ_mode</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">moda</span><span class="p">)</span>
+
+<span class="c1"># Hot-deck simple (usar muestreo aleatorio de valores no nulos)</span>
+<span class="n">df_categ_hotdeck</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cualitativas</span><span class="p">:</span>
+    <span class="n">valores</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+    <span class="n">df_categ_hotdeck</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">valores</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># KNN para categóricas (con Label Encoding)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">LabelEncoder</span>
+
+<span class="n">df_encoded</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">encoders</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cualitativas</span><span class="p">:</span>
+    <span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+    <span class="n">df_encoded</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_encoded</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="n">df_encoded</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_encoded</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
+    <span class="n">encoders</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span>
+
+<span class="n">knn_categ</span> <span class="o">=</span> <span class="n">KNNImputer</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">df_knn_categ</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">knn_categ</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_encoded</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">df_encoded</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cualitativas</span><span class="p">:</span>
+    <span class="n">le</span> <span class="o">=</span> <span class="n">encoders</span><span class="p">[</span><span class="n">col</span><span class="p">]</span>
+    <span class="n">df_knn_categ</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_knn_categ</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">df_knn_categ</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">df_knn_categ</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="imputacion-de-series">
+<h1>Imputacion de series<a class="headerlink" href="#imputacion-de-series" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_time</span><span class="p">[</span><span class="s2">&quot;fecha&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_time</span><span class="p">[</span><span class="s2">&quot;fecha&quot;</span><span class="p">])</span>
+<span class="n">df_time</span> <span class="o">=</span> <span class="n">df_time</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;fecha&quot;</span><span class="p">)</span>
+
+<span class="n">df_time_ffill</span> <span class="o">=</span> <span class="n">df_time</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;ffill&quot;</span><span class="p">)</span>
+<span class="n">df_time_bfill</span> <span class="o">=</span> <span class="n">df_time</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;bfill&quot;</span><span class="p">)</span>
+<span class="n">df_time_interp</span> <span class="o">=</span> <span class="n">df_time</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;linear&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\mateo\AppData\Local\Temp\ipykernel_19560\1582559107.py:5: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df_time_ffill = df_time.fillna(method=&quot;ffill&quot;)
+C:\Users\mateo\AppData\Local\Temp\ipykernel_19560\1582559107.py:6: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df_time_bfill = df_time.fillna(method=&quot;bfill&quot;)
+C:\Users\mateo\AppData\Local\Temp\ipykernel_19560\1582559107.py:7: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  df_time_interp = df_time.interpolate(method=&quot;linear&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="graficos-comparativos-numericas">
+<h1>Gráficos comparativos numéricas<a class="headerlink" href="#graficos-comparativos-numericas" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="s2">&quot;ingresos&quot;</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Original (con NaN)&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df_num_mean</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Imputado media&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df_num_median</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Imputado mediana&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">df_num_knn</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Imputado KNN&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f7320752a920517498f9442a719b843bd83ec0fc2c6b2c4feeed7720ab484b7d.png" src="_images/f7320752a920517498f9442a719b843bd83ec0fc2c6b2c4feeed7720ab484b7d.png" />
+</div>
+</div>
+</section>
+<section id="graficos-categoricas">
+<h1>Gráficos categóricas<a class="headerlink" href="#graficos-categoricas" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="s2">&quot;nivel_educativo&quot;</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Original (incluye NaN)&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df_categ_mode</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Imputado - moda&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df_categ_hotdeck</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Imputado - hot-deck&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f6d1c452a9382a9b83f7fa96dca6cabee4d6febfe7bfca4860662eece10373c6.png" src="_images/f6d1c452a9382a9b83f7fa96dca6cabee4d6febfe7bfca4860662eece10373c6.png" />
+</div>
+</div>
+</section>
+<section id="graficos-series-temporales">
+<h1>Gráficos series temporales<a class="headerlink" href="#graficos-series-temporales" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_time</span><span class="p">[</span><span class="s2">&quot;demanda&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Original&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_time_ffill</span><span class="p">[</span><span class="s2">&quot;demanda&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;ffill&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_time_bfill</span><span class="p">[</span><span class="s2">&quot;demanda&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;bfill&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_time_interp</span><span class="p">[</span><span class="s2">&quot;demanda&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;interpolate&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Comparación imputaciones serie temporal - demanda&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;fecha&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;demanda&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ba4fee07c8603441a44d5497ae4b2e175328642f9fd8ace95ccb2b381c3b4e88.png" src="_images/ba4fee07c8603441a44d5497ae4b2e175328642f9fd8ace95ccb2b381c3b4e88.png" />
+</div>
+</div>
+</section>
+<section id="evaluacion-estadistica">
+<h1>Evaluación estadística<a class="headerlink" href="#evaluacion-estadistica" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">resumen_eval</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cuantitativas</span><span class="p">:</span>
+    <span class="n">obs</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">obs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
+
+    <span class="c1"># Normalidad</span>
+    <span class="n">stat</span><span class="p">,</span> <span class="n">p_sh</span> <span class="o">=</span> <span class="n">shapiro</span><span class="p">(</span><span class="n">obs</span><span class="p">)</span>
+    <span class="n">normal</span> <span class="o">=</span> <span class="n">p_sh</span> <span class="o">&gt;</span> <span class="mf">0.05</span>
+
+    <span class="c1"># Comparar imputaciones (media como ejemplo)</span>
+    <span class="n">imputados</span> <span class="o">=</span> <span class="n">df_num_mean</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span> <span class="n">col</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">imputados</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">stat_ks</span><span class="p">,</span> <span class="n">p_ks</span> <span class="o">=</span> <span class="n">ks_2samp</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span> <span class="n">imputados</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">normal</span><span class="p">:</span>
+            <span class="n">stat_test</span><span class="p">,</span> <span class="n">p_test</span> <span class="o">=</span> <span class="n">ttest_ind</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span> <span class="n">imputados</span><span class="p">,</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">test_used</span> <span class="o">=</span> <span class="s2">&quot;t-test&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">stat_test</span><span class="p">,</span> <span class="n">p_test</span> <span class="o">=</span> <span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span> <span class="n">imputados</span><span class="p">)</span>
+            <span class="n">test_used</span> <span class="o">=</span> <span class="s2">&quot;Mann-Whitney&quot;</span>
+        <span class="n">resumen_eval</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">col</span><span class="p">,</span> <span class="n">normal</span><span class="p">,</span> <span class="n">p_sh</span><span class="p">,</span> <span class="n">p_ks</span><span class="p">,</span> <span class="n">test_used</span><span class="p">,</span> <span class="n">p_test</span><span class="p">])</span>
+
+<span class="n">resumen_eval</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">resumen_eval</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="s2">&quot;normal&quot;</span><span class="p">,</span><span class="s2">&quot;p_shapiro&quot;</span><span class="p">,</span><span class="s2">&quot;p_ks&quot;</span><span class="p">,</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="s2">&quot;p_valor&quot;</span><span class="p">])</span>
+<span class="n">resumen_eval</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\mateo\miniconda3\envs\ml_lihki\lib\site-packages\scipy\stats\_axis_nan_policy.py:531: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  res = hypotest_fun_out(*samples, **kwds)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>variable</th>
+      <th>normal</th>
+      <th>p_shapiro</th>
+      <th>p_ks</th>
+      <th>test</th>
+      <th>p_valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>edad</td>
+      <td>False</td>
+      <td>1.132185e-15</td>
+      <td>1.340747e-07</td>
+      <td>Mann-Whitney</td>
+      <td>0.817478</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>altura_cm</td>
+      <td>True</td>
+      <td>5.911472e-01</td>
+      <td>1.338285e-17</td>
+      <td>t-test</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ingresos</td>
+      <td>True</td>
+      <td>3.244752e-01</td>
+      <td>5.477614e-25</td>
+      <td>t-test</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>gasto_mensual</td>
+      <td>True</td>
+      <td>6.752081e-01</td>
+      <td>1.100156e-44</td>
+      <td>t-test</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>puntuacion_credito</td>
+      <td>True</td>
+      <td>9.405074e-01</td>
+      <td>3.933574e-58</td>
+      <td>t-test</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>demanda</td>
+      <td>False</td>
+      <td>1.129628e-07</td>
+      <td>2.550749e-30</td>
+      <td>Mann-Whitney</td>
+      <td>0.853906</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="resumen-final">
+<h1>Resumen Final<a class="headerlink" href="#resumen-final" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">resumen_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;variable&quot;</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
+    <span class="s2">&quot;%_nulos&quot;</span><span class="p">:</span> <span class="n">faltantes_pct</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+    <span class="s2">&quot;tipo_ausencia&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">tipo_ausencia</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">],</span>
+    <span class="s2">&quot;metodo_sugerido&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;media/mediana&quot;</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cuantitativas</span> <span class="k">else</span> <span class="s2">&quot;moda&quot;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">resumen_final</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;resumen_imputacion.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Resumen guardado en resumen_imputacion.csv&quot;</span><span class="p">)</span>
+<span class="n">resumen_final</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resumen guardado en resumen_imputacion.csv
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>variable</th>
+      <th>%_nulos</th>
+      <th>tipo_ausencia</th>
+      <th>metodo_sugerido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>fecha</td>
+      <td>0.0</td>
+      <td>No aplica</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>sexo</td>
+      <td>2.0</td>
+      <td>MCAR</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ciudad</td>
+      <td>5.0</td>
+      <td>MAR</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>nivel_educativo</td>
+      <td>10.0</td>
+      <td>MAR</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>segmento</td>
+      <td>20.0</td>
+      <td>MNAR</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>estado_civil</td>
+      <td>35.0</td>
+      <td>MNAR</td>
+      <td>moda</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>edad</td>
+      <td>3.0</td>
+      <td>MCAR</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>altura_cm</td>
+      <td>8.0</td>
+      <td>MAR</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>ingresos</td>
+      <td>12.0</td>
+      <td>MAR</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>gasto_mensual</td>
+      <td>25.0</td>
+      <td>MNAR</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>puntuacion_credito</td>
+      <td>50.0</td>
+      <td>MNAR</td>
+      <td>media/mediana</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>demanda</td>
+      <td>15.0</td>
+      <td>MAR</td>
+      <td>media/mediana</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerias</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-dataset">Cargar Dataset</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exploracion-de-variables">Exploracion de Variables</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-de-variables">Identificacion de Variables</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-faltantes">Detección de valores faltantes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-de-barras">Grafico de barras</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-de-calor-de-valores-faltantes">Mapa de calor de valores faltantes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-de-tipo-de-ausencia">Clasificación de tipo de ausencia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#discusion-sobre-imputabilidad">Discusión sobre imputabilidad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imputaciones-numericas">Imputaciones numéricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imputaciones-categoricas">Imputaciones categóricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-series">Imputacion de series</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-comparativos-numericas">Gráficos comparativos numéricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-categoricas">Gráficos categóricas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-series-temporales">Gráficos series temporales</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-estadistica">Evaluación estadística</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-final">Resumen Final</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
